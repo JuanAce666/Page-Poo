@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!---navbar comienza-->
+    <div class="accueil">
+      <div class="navbar">
+        <div  class="contLogo"></div>
+
+        <div class="contItems">
+          <a href="/html/index.html" class="items">Home</a>
+          <a href="https://github.com/JuanAce666/NewJavaPoo" class="items">Github</a>
+          <a href="https://github.com/JuanAce666/NewJavaPoo" class="items">Project</a>
+          <a href="#" class="items"></a>
+        </div>
+
+        <span class="logoMenuImg">&#9776;</span>
+      </div>
+    </div>
+
+    <!----navbar termina-->
+
+    <!----main comienza-->
+    <form id="miFormulario" onsubmit="return validarFormulario()">
+      <h2>Formulario de Ingreso</h2>
+
+      <!-- Usuario -->
+      <div>
+          <label for="nombres">Nombres y Apellidos:</label>
+          <input type="text" id="nombres" name="nombres" required>
+      </div>
+
+      <div>
+          <label for="ubicacion">Ubicación:</label>
+          <select id="ubicacion" name="ubicacion" required>
+              <option value="1">Zona Centro</option>
+              <option value="2">Zona Sur</option>
+              <option value="3">Zona Norte</option>
+              <option value="4">Otras</option>
+          </select>
+      </div>
+
+      <div>
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" id="correo" name="correo" required>
+      </div>
+
+      <!-- Local -->
+      <div>
+          <label for="nit">NIT:</label>
+          <input type="text" id="nit" name="nit" required>
+      </div>
+
+      <div>
+          <label for="nombreEmpresa">Nombre de la Empresa:</label>
+          <input type="text" id="nombreEmpresa" name="nombreEmpresa" required>
+      </div>
+
+      <!-- Oferta -->
+      <div>
+          <label for="tituloOferta">Título de la Oferta:</label>
+          <input type="text" id="tituloOferta" name="tituloOferta" required>
+      </div>
+
+      <div>
+          <label for="fechaInicio">Fecha de Inicio:</label>
+          <input type="text" placeholder="DD/MM/YYYY" id="fechaInicio" name="fechaInicio" required>
+      </div>
+
+      <div>
+          <label for="fechaFin">Fecha de Fin:</label>
+          <input type="text" placeholder="DD/MM/YYYY" id="fechaFin" name="fechaFin" required>
+      </div>
+
+      <div>
+          <label for="costoPorPersona">Costo por Persona:</label>
+          <input type="number" id="costoPorPersona" name="costoPorPersona" required>
+      </div>
+
+      <!-- Reserva -->
+      <div>
+          <label for="fechaReserva">Fecha de Reserva:</label>
+          <input type="text" placeholder="DD/MM/YYYY" id="fechaReserva" name="fechaReserva" required>
+      </div>
+
+      <div>
+          <label for="personasPorReserva">Número de Personas por Reserva:</label>
+          <input type="number" id="personasPorReserva" name="personasPorReserva" required>
+      </div>
+
+      <input type="submit" value="Enviar">
+
+      <div id="resultado">
+       
+      </div>
+      
+  </form>
+
+    <!----main termina-->
+
+    <!----footer comienza-->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="https://github.com/JuanAce666/NewJavaPoo">Grupo conformado</a></li>
+            <li><a href="https://github.com/JuanAce666">Juan Felipe Acevedo</a></li>
+            <li><a href="https://github.com/MachadoMateo">Mateo Machado</a></li>
+            <li><a href="https://github.com/isantiagojaramillo">Santiago Jaramillo</a></li>
+            <li><a href="https://github.com/mazosantiago">Santiago mazo</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          Object-oriented programming project - final group workshop - CESDE 
+        </div>
+      </div>
+    </footer>
+    <!----footer termina-->
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>

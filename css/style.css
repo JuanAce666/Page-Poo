@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Open+Sans:wght@300&display=swap');
+
+/*navbar comienza*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans";
+  position: relative;
+
+  
+}
+
+.accueil {
+  height: auto;
+  width: 100%;
+  background: #fffbfb;
+  background: url("");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  height: 69px;
+  width: 100%;
+  background: #a8a2a2;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+
+}
+.contLogo {
+  height: 65px;
+  width: 80px;
+  /* solo para alinear el logo */
+  display: flex;
+  background-image: url(/img/heart.png);
+  background-size: cover;
+}
+.logo {
+  margin-left: 20px;
+  width: 40px;
+}
+
+.contItems {
+  font-size: 22px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.items {
+  margin-right: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.items:hover {
+  color: #5f5f5f;
+}
+
+.logoMenuImg {
+  width: 30px;
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  /* hacemos aparecer el logo */
+  .logoMenuImg {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .items:nth-child(1) {
+    padding-top: 20px;
+  }
+  .items {
+    background: #a8a2a2;;
+    margin-right: 0;
+    padding: 10px 20px;
+    display: block;
+  }
+
+  .contItems {
+    display: none;
+    border-top: 1px solid black;
+    /* background: green; */
+  }
+  /* Alternar clase */
+  .responsive {
+    display: block;
+  }
+}
+/*navbar termina*/
+
+/* formulario comienza*/
+form {
+    max-width: 400px;
+    margin: 20px auto ;
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    font-family: "Nunito Sans";
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+}
+
+.exito {
+    color: green;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a5a5a;
+}
+
+
+
+/* formulario termina*/
+
+/*footer comienza*/
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.footer {
+  background: #000;
+  padding: 30px 0px;
+  text-align: center;
+  font-family: "Nunito Sans";
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+
+
+
+
+/*footer termina*/
+
+
